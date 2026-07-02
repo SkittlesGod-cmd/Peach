@@ -2,6 +2,8 @@
 
 UI/UX mockup and component preview platform.
 
+**Live demo:** https://peach-mockup.vercel.app
+
 ## Getting Started
 
 Requires [pnpm](https://pnpm.io/installation), Node.js 24+, and PostgreSQL (for the API server).
