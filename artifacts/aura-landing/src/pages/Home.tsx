@@ -5,7 +5,7 @@ import { BlobShape } from "@/components/BlobShape";
 import { AudioWaveform } from "@/components/AudioWaveform";
 import { MetricCard } from "@/components/MetricCard";
 import { SparkleField } from "@/components/SparkleField";
-import { PeachOrb } from "@/components/PeachOrb";
+import { HeroWaves } from "@/components/HeroWaves";
 
 const MARQUEE_ITEMS = [
   "Consumer Sentiment", "Aesthetic Shifts", "Signal Velocity",
@@ -99,44 +99,33 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          {/* Hero centrepiece — Peach Orb with floating metric cards */}
+          {/* Hero centrepiece — layered waves with floating metric cards */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="relative w-full max-w-3xl flex items-center justify-center"
-            style={{ height: 340 }}
+            className="relative w-full max-w-4xl"
           >
-            {/* Soft glow halo behind orb */}
-            <div
-              className="absolute rounded-full pointer-events-none"
-              style={{
-                width: 420,
-                height: 420,
-                background: "radial-gradient(circle, hsl(18 72% 68% / 0.18) 0%, transparent 70%)",
-                filter: "blur(40px)",
-              }}
-            />
-
-            <PeachOrb size={220} />
-
-            {/* Metric cards — orbit the orb */}
-            <div className="absolute top-4 left-4 md:left-0">
+            {/* Metric cards sit above the wave field */}
+            <div className="relative z-10 flex items-end justify-between px-4 mb-2 pointer-events-none">
               <MetricCard label="Signal Accuracy" value="94.2%" trend="+2.4%" delay={0.7} />
-            </div>
-            <div className="absolute bottom-8 right-4 md:right-0">
+              <MetricCard label="Brands Analyzed" value="2,840" delay={0.8} className="hidden sm:flex" />
               <MetricCard label="Trends Detected" value="1,247" trend="+127" delay={0.9} />
             </div>
-            <div className="absolute top-8 right-4 md:-right-4 hidden sm:block">
-              <MetricCard label="Brands Analyzed" value="2,840" delay={0.8} />
-            </div>
-            <div className="absolute bottom-4 left-4 md:-left-4 hidden md:block">
-              <MetricCard label="Velocity Index" value="8.4" trend="+0.2" delay={1.0} />
-            </div>
 
-            {/* Waveform strip beneath */}
-            <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-70">
-              <AudioWaveform bars={42} height={52} width={360} color="var(--color-aura-coral)" color2="var(--color-aura-amber)" />
+            {/* Wave visualisation */}
+            <div className="relative rounded-3xl overflow-hidden" style={{
+              boxShadow: "0 8px 60px hsl(8 76% 64% / 0.1), 0 1px 0 rgba(255,255,255,0.6) inset",
+              border: "1px solid rgba(255,255,255,0.45)",
+              background: "linear-gradient(180deg, rgba(255,249,240,0.6) 0%, rgba(250,243,235,0.4) 100%)",
+              backdropFilter: "blur(12px)",
+            }}>
+              <HeroWaves height={240} />
+
+              {/* Velocity metric pinned inside waves */}
+              <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 pointer-events-none">
+                <MetricCard label="Velocity Index" value="8.4" trend="+0.2" delay={1.0} />
+              </div>
             </div>
           </motion.div>
         </div>
