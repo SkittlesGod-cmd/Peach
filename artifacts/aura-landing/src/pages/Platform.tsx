@@ -30,7 +30,7 @@ const PIPELINE_STEPS = [
   {
     num: "01",
     title: "Ingest",
-    desc: "Aura's sensors monitor over 40,000 sources across social, editorial, search, and audio in real time — ingesting raw, unstructured data at massive scale.",
+    desc: "Peach's sensors monitor over 40,000 sources across social, editorial, search, and audio in real time — ingesting raw, unstructured data at massive scale.",
     tag: "Data Infrastructure",
   },
   {
@@ -58,7 +58,7 @@ const CAPABILITIES = [
   { title: "Trend Velocity", desc: "Proprietary momentum scoring that predicts how fast an emergent signal will reach peak culture." },
   { title: "Brand DNA Modeling", desc: "Map your brand's existing aesthetic signature, then align incoming signals against it automatically." },
   { title: "Moodboard Generation", desc: "Transform any signal cluster into a visual direction package ready for creative briefing." },
-  { title: "API & Webhooks", desc: "Pipe Aura's intelligence directly into your existing creative tools, CMS, or internal platforms." },
+  { title: "API & Webhooks", desc: "Pipe Peach's intelligence directly into your existing creative tools, CMS, or internal platforms." },
   { title: "Competitive Scanning", desc: "Monitor how competitors are responding to the same signals you're tracking — spot the gaps." },
 ];
 
@@ -174,7 +174,7 @@ export default function Platform() {
         <div className="max-w-6xl mx-auto relative z-10">
           <SectionReveal className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif text-aura-charcoal mb-4">Live signal preview</h2>
-            <p className="text-lg text-aura-charcoal-soft/70 font-light">A glimpse of what Aura is sensing right now.</p>
+            <p className="text-lg text-aura-charcoal-soft/70 font-light">A glimpse of what Peach is sensing right now.</p>
           </SectionReveal>
 
           <div className="relative bg-aura-cream-100/80 border border-white/50 backdrop-blur-md rounded-[2.5rem] p-8 md:p-12 overflow-hidden">

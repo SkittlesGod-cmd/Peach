@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-10 mb-10 pb-10 border-b border-white/10">
           <div className="max-w-xs">
-            <div className="text-2xl font-serif text-white tracking-tight mb-3">AURA</div>
+            <div className="text-2xl font-serif text-white tracking-tight mb-3">PEACH</div>
             <p className="text-white/40 font-light leading-relaxed text-sm">
               The intelligence platform that reads market signals and turns them into creative direction.
             </p>
@@ -39,7 +39,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div>© {new Date().getFullYear()} Aura Intelligence, Inc.</div>
+          <div>© {new Date().getFullYear()} Peach Intelligence, Inc.</div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors" data-testid="link-footer-twitter">Twitter</a>
             <a href="#" className="hover:text-white transition-colors" data-testid="link-footer-linkedin">LinkedIn</a>

@@ -22,16 +22,16 @@
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
-  
+
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
-  
+
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
-  
+
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
-  
+
   --color-destructive: hsl(var(--destructive));
   --color-destructive-foreground: hsl(var(--destructive-foreground));
 
@@ -39,15 +39,16 @@
   --font-serif: 'Playfair Display', serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  --color-aura-coral: hsl(12 70% 70%);
-  --color-aura-amber: hsl(33 60% 64%);
-  --color-aura-sage: hsl(112 19% 66%);
-  --color-aura-rose: hsl(0 36% 74%);
-  --color-aura-charcoal: hsl(36 17% 7%);
-  --color-aura-charcoal-soft: hsl(43 13% 11%);
-  --color-aura-cream-100: hsl(40 47% 95%);
-  --color-aura-cream-200: hsl(36 34% 93%);
-  --color-aura-cream-300: hsl(36 41% 86%);
+  /* ── Peach / Vanilla palette ── */
+  --color-aura-coral:         hsl(18 72% 68%);   /* warm peach       #E89070 */
+  --color-aura-amber:         hsl(28 68% 74%);   /* peachy amber     #EDAB7C */
+  --color-aura-sage:          hsl(15 52% 79%);   /* blush peach      #E8B09A */
+  --color-aura-rose:          hsl(10 58% 82%);   /* soft peach blush #EDB8A8 */
+  --color-aura-charcoal:      hsl(18 40% 9%);    /* warm near-black  #1C1108 */
+  --color-aura-charcoal-soft: hsl(18 28% 16%);   /* warm dark brown  #2E1E14 */
+  --color-aura-cream-100:     hsl(40 70% 97%);   /* vanilla white    #FEF9F0 */
+  --color-aura-cream-200:     hsl(35 58% 94%);   /* warm cream       #FAF3E6 */
+  --color-aura-cream-300:     hsl(28 52% 88%);   /* peach cream      #F5E3CC */
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -57,74 +58,64 @@
 }
 
 :root {
-  /* Default light theme using Aura palette */
-  --background: 36 34% 93%; /* cream-200 */
-  --foreground: 36 17% 7%; /* charcoal */
-  
-  --card: 40 47% 95%; /* cream-100 */
-  --card-foreground: 36 17% 7%; /* charcoal */
-  --card-border: 36 41% 86%; /* cream-300 */
-  
-  --popover: 40 47% 95%; /* cream-100 */
-  --popover-foreground: 36 17% 7%; /* charcoal */
-  --popover-border: 36 41% 86%; /* cream-300 */
-  
-  --primary: 36 17% 7%; /* charcoal */
-  --primary-foreground: 40 47% 95%; /* cream-100 */
-  
-  --secondary: 40 47% 95%; /* cream-100 */
-  --secondary-foreground: 36 17% 7%; /* charcoal */
-  
-  --muted: 36 41% 86%; /* cream-300 */
-  --muted-foreground: 43 13% 11%; /* charcoal-soft */
-  
-  --accent: 36 41% 86%; /* cream-300 */
-  --accent-foreground: 36 17% 7%; /* charcoal */
-  
-  --destructive: 0 84.2% 60.2%;
+  --background:           35 58% 94%;   /* warm vanilla cream */
+  --foreground:           18 40% 9%;    /* warm charcoal */
+
+  --card:                 40 70% 97%;
+  --card-foreground:      18 40% 9%;
+  --card-border:          28 52% 88%;
+
+  --popover:              40 70% 97%;
+  --popover-foreground:   18 40% 9%;
+  --popover-border:       28 52% 88%;
+
+  --primary:              18 40% 9%;
+  --primary-foreground:   40 70% 97%;
+
+  --secondary:            40 70% 97%;
+  --secondary-foreground: 18 40% 9%;
+
+  --muted:                28 52% 88%;
+  --muted-foreground:     18 28% 16%;
+
+  --accent:               28 52% 88%;
+  --accent-foreground:    18 40% 9%;
+
+  --destructive:          0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 36 41% 86%; /* cream-300 */
-  --input: 36 41% 86%; /* cream-300 */
-  --ring: 36 17% 7%; /* charcoal */
-
+  --border: 28 52% 88%;
+  --input:  28 52% 88%;
+  --ring:   18 40% 9%;
   --radius: 0.75rem;
 }
 
 .dark {
-  /* Minimal dark variables if dark mode is toggled, though design emphasizes light creams mostly */
-  --background: 36 17% 7%;
-  --foreground: 36 34% 93%;
-  --card: 43 13% 11%;
-  --card-foreground: 36 34% 93%;
-  --card-border: 36 17% 7%;
-  --popover: 43 13% 11%;
-  --popover-foreground: 36 34% 93%;
-  --popover-border: 36 17% 7%;
-  --primary: 36 34% 93%;
-  --primary-foreground: 36 17% 7%;
-  --secondary: 43 13% 11%;
-  --secondary-foreground: 36 34% 93%;
-  --muted: 43 13% 11%;
-  --muted-foreground: 36 41% 86%;
-  --accent: 43 13% 11%;
-  --accent-foreground: 36 34% 93%;
-  --destructive: 0 62.8% 30.6%;
+  --background:           18 40% 9%;
+  --foreground:           35 58% 94%;
+  --card:                 18 28% 16%;
+  --card-foreground:      35 58% 94%;
+  --card-border:          18 40% 9%;
+  --popover:              18 28% 16%;
+  --popover-foreground:   35 58% 94%;
+  --popover-border:       18 40% 9%;
+  --primary:              35 58% 94%;
+  --primary-foreground:   18 40% 9%;
+  --secondary:            18 28% 16%;
+  --secondary-foreground: 35 58% 94%;
+  --muted:                18 28% 16%;
+  --muted-foreground:     28 52% 88%;
+  --accent:               18 28% 16%;
+  --accent-foreground:    35 58% 94%;
+  --destructive:          0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border: 43 13% 11%;
-  --input: 43 13% 11%;
-  --ring: 36 34% 93%;
+  --border: 18 28% 16%;
+  --input:  18 28% 16%;
+  --ring:   35 58% 94%;
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
-  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  h1, h2, h3, h4, h5, h6 { @apply font-serif; }
 }

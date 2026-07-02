@@ -89,7 +89,7 @@ const FAQS = [
   },
   {
     q: "What counts as a 'brand DNA profile'?",
-    a: "A brand DNA profile is Aura's deep analysis of a single brand's existing aesthetic signatures, values, and audience resonance patterns. It's the lens through which signals are filtered and scored for relevance.",
+    a: "A brand DNA profile is Peach's deep analysis of a single brand's existing aesthetic signatures, values, and audience resonance patterns. It's the lens through which signals are filtered and scored for relevance.",
   },
   {
     q: "Do you offer a free trial?",
@@ -97,7 +97,7 @@ const FAQS = [
   },
   {
     q: "What integrations are available?",
-    a: "Aura connects to Slack, Notion, Figma, and most CMSs via webhook. API access is available on Studio (read) and Enterprise (full). Custom integrations are built as part of Enterprise onboarding.",
+    a: "Peach connects to Slack, Notion, Figma, and most CMSs via webhook. API access is available on Studio (read) and Enterprise (full). Custom integrations are built as part of Enterprise onboarding.",
   },
   {
     q: "How does annual billing work?",

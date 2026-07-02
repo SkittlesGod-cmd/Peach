@@ -85,16 +85,16 @@ export default function Demo() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-serif text-aura-charcoal leading-tight mb-6">
-                See Aura in <span className="italic font-light">action.</span>
+                See Peach in <span className="italic font-light">action.</span>
               </h1>
               <p className="text-lg text-aura-charcoal-soft/70 font-light mb-12 leading-relaxed">
-                In 30 minutes, we'll walk you through a live signal session tailored to your industry — so you can see exactly what Aura finds before your competitors do.
+                In 30 minutes, we'll walk you through a live signal session tailored to your industry — so you can see exactly what Peach finds before your competitors do.
               </p>
 
               <div className="space-y-5 mb-12">
                 {[
                   { title: "Live signal walkthrough", desc: "We run a real-time scan of your category while you watch." },
-                  { title: "Brand DNA demo", desc: "See how Aura profiles your brand and filters signals against it." },
+                  { title: "Brand DNA demo", desc: "See how Peach profiles your brand and filters signals against it." },
                   { title: "Q&A with a strategist", desc: "Get honest answers about fit, pricing, and onboarding." },
                 ].map((item, i) => (
                   <motion.div
@@ -155,7 +155,7 @@ export default function Demo() {
                         We'll reach out to <strong className="font-medium text-aura-charcoal">{form.email}</strong> within one business day to schedule your session.
                       </p>
                       <p className="text-sm text-aura-charcoal-soft/50 font-light mb-10">
-                        In the meantime, explore what Aura can do.
+                        In the meantime, explore what Peach can do.
                       </p>
                       <div className="flex flex-col sm:flex-row gap-3">
                         <Link

@@ -53,7 +53,7 @@ const SOLUTIONS = [
       "Slack & Notion integrations",
     ],
     testimonial: {
-      quote: "Aura replaced three separate trend research subscriptions and gave us something better — intelligence that's specific to us.",
+      quote: "Peach replaced three separate trend research subscriptions and gave us something better — intelligence that's specific to us.",
       name: "Priya Nair",
       role: "VP Brand, Halcyon Consumer",
     },
@@ -73,7 +73,7 @@ const SOLUTIONS = [
       "Dedicated research support",
     ],
     testimonial: {
-      quote: "We built an entire product offering around Aura. Our clients now expect live intelligence as a deliverable, not just a report.",
+      quote: "We built an entire product offering around Peach. Our clients now expect live intelligence as a deliverable, not just a report.",
       name: "Sofia Chen",
       role: "Founder, Cadence Advisory",
     },
@@ -117,7 +117,7 @@ export default function Solutions() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Whether you're a boutique agency or a global brand team, Aura adapts to the way you work and the questions you actually need answered.
+            Whether you're a boutique agency or a global brand team, Peach adapts to the way you work and the questions you actually need answered.
           </motion.p>
         </div>
       </section>
@@ -253,7 +253,7 @@ export default function Solutions() {
             Find your <span className="italic font-light">advantage.</span>
           </h2>
           <p className="text-white/60 text-lg font-light mb-10 max-w-xl mx-auto">
-            See how Aura adapts to your team's specific workflow in a 30-minute live session.
+            See how Peach adapts to your team's specific workflow in a 30-minute live session.
           </p>
           <Link
             href="/demo"

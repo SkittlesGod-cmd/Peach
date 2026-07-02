@@ -47,7 +47,7 @@ export function Navbar() {
               data-testid="link-logo"
               className="text-2xl font-serif font-bold tracking-tight text-aura-charcoal shrink-0"
             >
-              AURA
+              PEACH
             </Link>
 
             <nav className="hidden md:flex items-center gap-8">
