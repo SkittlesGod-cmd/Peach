@@ -1,8 +1,8 @@
 kind = "web"
 previewPath = "/"
-title = "Aura — AI Brand Intelligence"
+title = "Peach"
 version = "1.0.0"
-id = "artifacts/aura-landing"
+id = "artifacts/peach"
 router = "path"
 
 [[integratedSkills]]
@@ -15,11 +15,11 @@ paths = [ "/" ]
 localPort = 23226
 
 [services.development]
-run = "pnpm --filter @workspace/aura-landing run dev"
+run = "pnpm --filter @workspace/peach run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/aura-landing", "run", "build" ]
-publicDir = "artifacts/aura-landing/dist/public"
+build = [ "pnpm", "--filter", "@workspace/peach", "run", "build" ]
+publicDir = "artifacts/peach/dist/public"
 serve = "static"
 
 [[services.production.rewrites]]
