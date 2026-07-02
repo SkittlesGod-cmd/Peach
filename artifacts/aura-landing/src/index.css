@@ -39,16 +39,33 @@
   --font-serif: 'Playfair Display', serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  /* ── Orange · Red · Purple palette ── */
-  --color-aura-coral:         hsl(8 76% 64%);    /* warm red-coral    */
-  --color-aura-amber:         hsl(22 88% 68%);   /* light orange      */
-  --color-aura-sage:          hsl(272 40% 66%);  /* soft purple       */
-  --color-aura-rose:          hsl(288 34% 72%);  /* light lavender    */
-  --color-aura-charcoal:      hsl(264 22% 10%);  /* deep purple-dark  */
-  --color-aura-charcoal-soft: hsl(260 16% 17%);  /* mid purple-dark   */
-  --color-aura-cream-100:     hsl(30 80% 97%);   /* lightest vanilla  */
-  --color-aura-cream-200:     hsl(24 68% 94%);   /* warm light orange */
-  --color-aura-cream-300:     hsl(16 62% 88%);   /* orange-pink cream */
+  /* ═══════════════════════════════════════════════════
+     Palette: warm orange-cream · red-coral · soft purple
+     All values tuned to blend on hsl(22 60% 95%) base.
+     ═══════════════════════════════════════════════════ */
+
+  /* Accent — warm red-coral (buttons, dots, highlights) */
+  --color-aura-coral:         hsl(6 72% 62%);
+
+  /* Accent — light orange (blobs, tags, warm glows) */
+  --color-aura-amber:         hsl(24 82% 68%);
+
+  /* Accent — dusty soft purple (blobs, velocity tags) */
+  --color-aura-sage:          hsl(268 36% 65%);
+
+  /* Accent — muted lavender (secondary blobs) */
+  --color-aura-rose:          hsl(284 30% 70%);
+
+  /* Text/UI — very deep purple-black (readable on warm bg) */
+  --color-aura-charcoal:      hsl(270 28% 9%);
+
+  /* Text/UI — mid purple-dark for secondary text */
+  --color-aura-charcoal-soft: hsl(265 18% 17%);
+
+  /* Surfaces — graduated warm cream → vanilla */
+  --color-aura-cream-100:     hsl(32 75% 97%);   /* near-white vanilla   */
+  --color-aura-cream-200:     hsl(24 65% 94%);   /* warm light orange    */
+  --color-aura-cream-300:     hsl(18 58% 88%);   /* orange-pink cream    */
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -58,60 +75,61 @@
 }
 
 :root {
-  --background:           24 68% 94%;   /* warm light orange-cream */
-  --foreground:           264 22% 10%;  /* deep purple-dark */
+  /* page background: warm orange-cream */
+  --background:           22 60% 95%;
+  --foreground:           270 28%  9%;
 
-  --card:                 30 80% 97%;
-  --card-foreground:      264 22% 10%;
-  --card-border:          16 62% 88%;
+  --card:                 32 75% 97%;
+  --card-foreground:      270 28%  9%;
+  --card-border:          18 58% 88%;
 
-  --popover:              30 80% 97%;
-  --popover-foreground:   264 22% 10%;
-  --popover-border:       16 62% 88%;
+  --popover:              32 75% 97%;
+  --popover-foreground:   270 28%  9%;
+  --popover-border:       18 58% 88%;
 
-  --primary:              264 22% 10%;
-  --primary-foreground:   30 80% 97%;
+  --primary:              270 28%  9%;
+  --primary-foreground:   32 75% 97%;
 
-  --secondary:            30 80% 97%;
-  --secondary-foreground: 264 22% 10%;
+  --secondary:            32 75% 97%;
+  --secondary-foreground: 270 28%  9%;
 
-  --muted:                16 62% 88%;
-  --muted-foreground:     260 16% 17%;
+  --muted:                18 58% 88%;
+  --muted-foreground:     265 18% 17%;
 
-  --accent:               16 62% 88%;
-  --accent-foreground:    264 22% 10%;
+  --accent:               18 58% 88%;
+  --accent-foreground:    270 28%  9%;
 
   --destructive:          0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 16 62% 88%;
-  --input:  16 62% 88%;
-  --ring:   264 22% 10%;
+  --border: 18 58% 88%;
+  --input:  18 58% 88%;
+  --ring:   270 28%  9%;
   --radius: 0.75rem;
 }
 
 .dark {
-  --background:           264 22% 10%;
-  --foreground:           24 68% 94%;
-  --card:                 260 16% 17%;
-  --card-foreground:      24 68% 94%;
-  --card-border:          264 22% 10%;
-  --popover:              260 16% 17%;
-  --popover-foreground:   24 68% 94%;
-  --popover-border:       264 22% 10%;
-  --primary:              24 68% 94%;
-  --primary-foreground:   264 22% 10%;
-  --secondary:            260 16% 17%;
-  --secondary-foreground: 24 68% 94%;
-  --muted:                260 16% 17%;
-  --muted-foreground:     16 62% 88%;
-  --accent:               260 16% 17%;
-  --accent-foreground:    24 68% 94%;
+  --background:           270 28%  9%;
+  --foreground:           22 60% 95%;
+  --card:                 265 18% 17%;
+  --card-foreground:      22 60% 95%;
+  --card-border:          270 28%  9%;
+  --popover:              265 18% 17%;
+  --popover-foreground:   22 60% 95%;
+  --popover-border:       270 28%  9%;
+  --primary:              22 60% 95%;
+  --primary-foreground:   270 28%  9%;
+  --secondary:            265 18% 17%;
+  --secondary-foreground: 22 60% 95%;
+  --muted:                265 18% 17%;
+  --muted-foreground:     18 58% 88%;
+  --accent:               265 18% 17%;
+  --accent-foreground:    22 60% 95%;
   --destructive:          0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border: 260 16% 17%;
-  --input:  260 16% 17%;
-  --ring:   24 68% 94%;
+  --border: 265 18% 17%;
+  --input:  265 18% 17%;
+  --ring:   22 60% 95%;
 }
 
 @layer base {

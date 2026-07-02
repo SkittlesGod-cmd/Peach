@@ -107,7 +107,7 @@ export default function Home() {
             className="relative w-full max-w-4xl"
           >
             {/* Metric cards sit above the wave field */}
-            <div className="relative z-10 flex items-end justify-between px-4 mb-2 pointer-events-none">
+            <div className="relative z-10 flex items-end justify-between px-4 mb-8 pointer-events-none">
               <MetricCard label="Signal Accuracy" value="94.2%" trend="+2.4%" delay={0.7} />
               <MetricCard label="Brands Analyzed" value="2,840" delay={0.8} className="hidden sm:flex" />
               <MetricCard label="Trends Detected" value="1,247" trend="+127" delay={0.9} />
@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* ── Marquee ── */}
-      <section className="py-12 border-y border-aura-charcoal/5 overflow-hidden bg-aura-cream-100/60 backdrop-blur-sm relative z-10 mt-16">
+      <section className="py-12 border-y border-aura-charcoal/5 overflow-hidden bg-aura-cream-100/60 backdrop-blur-sm relative z-10 mt-32">
         <div className="flex w-fit animate-[marquee_44s_linear_infinite] opacity-55 mix-blend-multiply">
           {Array.from({ length: 8 }).flatMap((_, i) =>
             MARQUEE_ITEMS.map((item, j) => (
