@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "artifacts/peach/dist/public",
+  "installCommand": "pnpm install"
+}

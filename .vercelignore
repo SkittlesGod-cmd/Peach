@@ -1,0 +1,7 @@
+.cache
+.local
+.agents
+.git
+node_modules
+*.tsbuildinfo
+dist
