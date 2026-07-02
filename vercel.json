@@ -2,5 +2,8 @@
   "framework": "vite",
   "buildCommand": "pnpm run build",
   "outputDirectory": "artifacts/peach/dist/public",
-  "installCommand": "pnpm install"
+  "installCommand": "pnpm install",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
